@@ -27,6 +27,12 @@ function Portfolio() {
       repository: "https://github.com/Darbybiddy/Horiseon-refactor",
     },
   ]);
+
+  const openLink = (image,i)=>{
+    setReactProject({...image, index: i})
+    setIsModalOpen(!isModalOpen)
+  }
+
   return (
     <section>
       <div className="my-portfolio">

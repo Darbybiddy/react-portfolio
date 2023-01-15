@@ -10,7 +10,7 @@ import { useState } from 'react';
 function App() {
   const [portfolioSelect, setPortfolioSelected] = useState(false)
   const [aboutMeSelect, setAboutMeSelected] = useState(true)
-  cosnt [resumeSelect, setResumeSelected] = useState(false)
+  const [resumeSelect, setResumeSelected] = useState(false)
   const [contactSelect, setContactSelected] = useState(false)
 
   return (
