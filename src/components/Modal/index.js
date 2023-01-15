@@ -10,7 +10,7 @@ const Modal = ({ onClose, reactProject }) => {
         <div>
           <a href={website}>
             <img
-              src={require(`../../../assets/images ${index}.png`)}
+              src={require(`../../assets/ ${index}.png`)}
               
               alt="react project"
             />

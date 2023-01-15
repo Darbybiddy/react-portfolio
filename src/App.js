@@ -4,9 +4,15 @@ import Portfolio from './components/Portfolio'
 import Resume from './components/Resume'
 import Contact from './components/Contact'
 import './App.css';
+import { useState } from 'react';
 
 
 function App() {
+  const [portfolioSelect, setPortfolioSelected] = useState(false)
+  const [aboutMeSelect, setAboutMeSelected] = useState(true)
+  cosnt [resumeSelect, setResumeSelected] = useState(false)
+  const [contactSelect, setContactSelected] = useState(false)
+
   return (
     <div className="App">
       <header>
@@ -21,6 +27,12 @@ function App() {
       setContactSelected={setContactSelected}
       />
       </header>
+      <section>
+        {portfolioSelect && <Portfolio/>}
+        {aboutMeSelect && <About />}
+        {resumeSelect && <Resume />}
+        {Contact && <Contact />}
+      </section>
     </div>
   );
 }
